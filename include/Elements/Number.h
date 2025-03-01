@@ -10,10 +10,10 @@ private:
 
 public:
     explicit Number(int value);
-    ~Number() override = default;
+    virtual ~Number() {}  // Changed syntax to fix C++11 issue
 
     int getValue() const;
-    void accept(Visitor& visitor) const override;
+    virtual void accept(Visitor& visitor) const;  // Removed override keyword
 };
 
 #endif // NUMBER_H
