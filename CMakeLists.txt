@@ -11,7 +11,7 @@ include_directories(include)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 # Create the main executable
-add_executable(expression_tree ${SOURCES})
+add_executable(ExpressionTreeVisitor ${SOURCES})
 
 # Test files
 file(GLOB_RECURSE TEST_SOURCES "test/*.cpp" "src/Elements/*.cpp" "src/Visitors/*.cpp")
