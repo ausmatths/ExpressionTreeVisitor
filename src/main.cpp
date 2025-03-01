@@ -1,25 +1,42 @@
 #include <iostream>
+#include <memory>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+#include "../include/Elements/Number.h"
+#include "../include/Elements/Addition.h"
+#include "../include/Elements/Multiplication.h"
+#include "../include/Visitors/PrefixVisitor.h"
+#include "../include/Visitors/PostfixVisitor.h"
+#include "../include/Visitors/InfixVisitor.h"
+
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    // Create the expression tree: (3+7)*6
+    auto tree = std::make_shared<Multiplication>(
+            std::make_shared<Addition>(
+                    std::make_shared<Number>(3),
+                    std::make_shared<Number>(7)
+            ),
+            std::make_shared<Number>(6)
+    );
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
-    }
+    // Use PrefixVisitor
+    PrefixVisitor prefixVisitor;
+    tree->accept(prefixVisitor);
+    std::string prefixResult = prefixVisitor.getResult();
+
+    // Use PostfixVisitor
+    PostfixVisitor postfixVisitor;
+    tree->accept(postfixVisitor);
+    std::string postfixResult = postfixVisitor.getResult();
+
+    // Use InfixVisitor
+    InfixVisitor infixVisitor;
+    tree->accept(infixVisitor);
+    std::string infixResult = infixVisitor.getResult();
+
+    // Output results
+    std::cout << "Prefix: " << prefixResult << std::endl;
+    std::cout << "Postfix: " << postfixResult << std::endl;
+    std::cout << "Infix: " << infixResult << std::endl;
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
