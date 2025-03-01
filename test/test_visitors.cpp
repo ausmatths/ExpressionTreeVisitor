@@ -2,6 +2,7 @@
 #include <memory>
 #include <string>
 #include <cassert>
+#include <vector>
 
 #include "../include/Elements/Number.h"
 #include "../include/Elements/Addition.h"
@@ -17,6 +18,16 @@ struct TestCase {
     std::string expectedPrefix;
     std::string expectedPostfix;
     std::string expectedInfix;
+
+    // Constructor to fix initialization list issues in C++98/03
+    TestCase(const std::string& n,
+             const std::shared_ptr<Expression>& expr,
+             const std::string& prefix,
+             const std::string& postfix,
+             const std::string& infix)
+            : name(n), expression(expr),
+              expectedPrefix(prefix), expectedPostfix(postfix), expectedInfix(infix) {
+    }
 };
 
 // Run a test case
@@ -52,78 +63,78 @@ void runTestCase(const TestCase& test) {
 }
 
 int main() {
-    // Define test cases
-    std::vector<TestCase> testCases = {
-            // Test Case 1: Simple Number
-            {
-                    "Simple Number",
-                    std::make_shared<Number>(5),
-                    "5",
-                    "5",
-                    "5"
-            },
+    // Create test cases manually instead of using initializer list (C++11 feature)
+    std::vector<TestCase> testCases;
 
-            // Test Case 2: Simple Addition
-            {
-                    "Simple Addition",
+    // Test Case 1: Simple Number
+    testCases.push_back(TestCase(
+            "Simple Number",
+            std::make_shared<Number>(5),
+            "5",
+            "5",
+            "5"
+    ));
+
+    // Test Case 2: Simple Addition
+    testCases.push_back(TestCase(
+            "Simple Addition",
+            std::make_shared<Addition>(
+                    std::make_shared<Number>(2),
+                    std::make_shared<Number>(3)
+            ),
+            "(+ 2 3)",
+            "2 3 +",
+            "(2+3)"
+    ));
+
+    // Test Case 3: Simple Multiplication
+    testCases.push_back(TestCase(
+            "Simple Multiplication",
+            std::make_shared<Multiplication>(
+                    std::make_shared<Number>(4),
+                    std::make_shared<Number>(5)
+            ),
+            "(* 4 5)",
+            "4 5 *",
+            "4*5"
+    ));
+
+    // Test Case 4: Complex Expression (2 + 3) * (4 + 5)
+    testCases.push_back(TestCase(
+            "Complex Expression",
+            std::make_shared<Multiplication>(
                     std::make_shared<Addition>(
                             std::make_shared<Number>(2),
                             std::make_shared<Number>(3)
                     ),
-                    "(+ 2 3)",
-                    "2 3 +",
-                    "(2+3)"
-            },
-
-            // Test Case 3: Simple Multiplication
-            {
-                    "Simple Multiplication",
-                    std::make_shared<Multiplication>(
+                    std::make_shared<Addition>(
                             std::make_shared<Number>(4),
                             std::make_shared<Number>(5)
-                    ),
-                    "(* 4 5)",
-                    "4 5 *",
-                    "4*5"
-            },
+                    )
+            ),
+            "(* (+ 2 3) (+ 4 5))",
+            "2 3 + 4 5 + *",
+            "(2+3)*(4+5)"
+    ));
 
-            // Test Case 4: Complex Expression (2 + 3) * (4 + 5)
-            {
-                    "Complex Expression",
-                    std::make_shared<Multiplication>(
-                            std::make_shared<Addition>(
-                                    std::make_shared<Number>(2),
-                                    std::make_shared<Number>(3)
-                            ),
-                            std::make_shared<Addition>(
-                                    std::make_shared<Number>(4),
-                                    std::make_shared<Number>(5)
-                            )
+    // Test Case 5: Required homework case (3 + 7) * 6
+    testCases.push_back(TestCase(
+            "Homework Example",
+            std::make_shared<Multiplication>(
+                    std::make_shared<Addition>(
+                            std::make_shared<Number>(3),
+                            std::make_shared<Number>(7)
                     ),
-                    "(* (+ 2 3) (+ 4 5))",
-                    "2 3 + 4 5 + *",
-                    "(2+3)*(4+5)"
-            },
+                    std::make_shared<Number>(6)
+            ),
+            "(* (+ 3 7) 6)",
+            "3 7 + 6 *",
+            "(3+7)*6"
+    ));
 
-            // Test Case 5: Required homework case (3 + 7) * 6
-            {
-                    "Homework Example",
-                    std::make_shared<Multiplication>(
-                            std::make_shared<Addition>(
-                                    std::make_shared<Number>(3),
-                                    std::make_shared<Number>(7)
-                            ),
-                            std::make_shared<Number>(6)
-                    ),
-                    "(* (+ 3 7) 6)",
-                    "3 7 + 6 *",
-                    "(3+7)*6"
-            }
-    };
-
-    // Run all test cases
-    for (const auto& testCase : testCases) {
-        runTestCase(testCase);
+    // Run all test cases using traditional for loop instead of range-based for
+    for (size_t i = 0; i < testCases.size(); ++i) {
+        runTestCase(testCases[i]);
     }
 
     std::cout << "All tests passed successfully!" << std::endl;

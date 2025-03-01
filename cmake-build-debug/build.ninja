@@ -51,49 +51,49 @@ build cmake_object_order_depends_target_ExpressionTreeVisitor: phony || .
 
 build CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Addition.cpp.o: CXX_COMPILER__ExpressionTreeVisitor_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Elements/Addition.cpp || cmake_object_order_depends_target_ExpressionTreeVisitor
   DEP_FILE = CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Addition.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ExpressionTreeVisitor.dir/src/Elements
 
 build CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Multiplication.cpp.o: CXX_COMPILER__ExpressionTreeVisitor_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Elements/Multiplication.cpp || cmake_object_order_depends_target_ExpressionTreeVisitor
   DEP_FILE = CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Multiplication.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ExpressionTreeVisitor.dir/src/Elements
 
 build CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Number.cpp.o: CXX_COMPILER__ExpressionTreeVisitor_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Elements/Number.cpp || cmake_object_order_depends_target_ExpressionTreeVisitor
   DEP_FILE = CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Number.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ExpressionTreeVisitor.dir/src/Elements
 
 build CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/InfixVisitor.cpp.o: CXX_COMPILER__ExpressionTreeVisitor_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Visitors/InfixVisitor.cpp || cmake_object_order_depends_target_ExpressionTreeVisitor
   DEP_FILE = CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/InfixVisitor.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors
 
 build CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/PostfixVisitor.cpp.o: CXX_COMPILER__ExpressionTreeVisitor_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Visitors/PostfixVisitor.cpp || cmake_object_order_depends_target_ExpressionTreeVisitor
   DEP_FILE = CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/PostfixVisitor.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors
 
 build CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/PrefixVisitor.cpp.o: CXX_COMPILER__ExpressionTreeVisitor_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Visitors/PrefixVisitor.cpp || cmake_object_order_depends_target_ExpressionTreeVisitor
   DEP_FILE = CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/PrefixVisitor.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors
 
 build CMakeFiles/ExpressionTreeVisitor.dir/src/main.cpp.o: CXX_COMPILER__ExpressionTreeVisitor_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/main.cpp || cmake_object_order_depends_target_ExpressionTreeVisitor
   DEP_FILE = CMakeFiles/ExpressionTreeVisitor.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ExpressionTreeVisitor.dir/src
@@ -107,7 +107,7 @@ build CMakeFiles/ExpressionTreeVisitor.dir/src/main.cpp.o: CXX_COMPILER__Express
 # Link the executable ExpressionTreeVisitor
 
 build ExpressionTreeVisitor: CXX_EXECUTABLE_LINKER__ExpressionTreeVisitor_Debug CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Addition.cpp.o CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Multiplication.cpp.o CMakeFiles/ExpressionTreeVisitor.dir/src/Elements/Number.cpp.o CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/InfixVisitor.cpp.o CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/PostfixVisitor.cpp.o CMakeFiles/ExpressionTreeVisitor.dir/src/Visitors/PrefixVisitor.cpp.o CMakeFiles/ExpressionTreeVisitor.dir/src/main.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+  FLAGS = -std=c++11 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/ExpressionTreeVisitor.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -125,49 +125,49 @@ build cmake_object_order_depends_target_run_tests: phony || .
 
 build CMakeFiles/run_tests.dir/src/Elements/Addition.cpp.o: CXX_COMPILER__run_tests_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Elements/Addition.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = CMakeFiles/run_tests.dir/src/Elements/Addition.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/run_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/run_tests.dir/src/Elements
 
 build CMakeFiles/run_tests.dir/src/Elements/Multiplication.cpp.o: CXX_COMPILER__run_tests_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Elements/Multiplication.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = CMakeFiles/run_tests.dir/src/Elements/Multiplication.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/run_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/run_tests.dir/src/Elements
 
 build CMakeFiles/run_tests.dir/src/Elements/Number.cpp.o: CXX_COMPILER__run_tests_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Elements/Number.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = CMakeFiles/run_tests.dir/src/Elements/Number.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/run_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/run_tests.dir/src/Elements
 
 build CMakeFiles/run_tests.dir/src/Visitors/InfixVisitor.cpp.o: CXX_COMPILER__run_tests_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Visitors/InfixVisitor.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = CMakeFiles/run_tests.dir/src/Visitors/InfixVisitor.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/run_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/run_tests.dir/src/Visitors
 
 build CMakeFiles/run_tests.dir/src/Visitors/PostfixVisitor.cpp.o: CXX_COMPILER__run_tests_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Visitors/PostfixVisitor.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = CMakeFiles/run_tests.dir/src/Visitors/PostfixVisitor.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/run_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/run_tests.dir/src/Visitors
 
 build CMakeFiles/run_tests.dir/src/Visitors/PrefixVisitor.cpp.o: CXX_COMPILER__run_tests_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/src/Visitors/PrefixVisitor.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = CMakeFiles/run_tests.dir/src/Visitors/PrefixVisitor.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/run_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/run_tests.dir/src/Visitors
 
 build CMakeFiles/run_tests.dir/test/test_visitors.cpp.o: CXX_COMPILER__run_tests_unscanned_Debug /Users/ausmatths/CLionProjects/ExpressionTreeVisitor/test/test_visitors.cpp || cmake_object_order_depends_target_run_tests
   DEP_FILE = CMakeFiles/run_tests.dir/test/test_visitors.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  FLAGS = -std=c++11 -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   INCLUDES = -I/Users/ausmatths/CLionProjects/ExpressionTreeVisitor/include
   OBJECT_DIR = CMakeFiles/run_tests.dir
   OBJECT_FILE_DIR = CMakeFiles/run_tests.dir/test
@@ -181,7 +181,7 @@ build CMakeFiles/run_tests.dir/test/test_visitors.cpp.o: CXX_COMPILER__run_tests
 # Link the executable run_tests
 
 build run_tests: CXX_EXECUTABLE_LINKER__run_tests_Debug CMakeFiles/run_tests.dir/src/Elements/Addition.cpp.o CMakeFiles/run_tests.dir/src/Elements/Multiplication.cpp.o CMakeFiles/run_tests.dir/src/Elements/Number.cpp.o CMakeFiles/run_tests.dir/src/Visitors/InfixVisitor.cpp.o CMakeFiles/run_tests.dir/src/Visitors/PostfixVisitor.cpp.o CMakeFiles/run_tests.dir/src/Visitors/PrefixVisitor.cpp.o CMakeFiles/run_tests.dir/test/test_visitors.cpp.o
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+  FLAGS = -std=c++11 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/run_tests.dir
   POST_BUILD = :
   PRE_LINK = :
